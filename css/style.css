@@ -6,7 +6,8 @@
   font-size:100%;
   font-weight:normal;
 }
-html{background-color: #f8f9fa;}
+html{background-color: #f8f9fa;
+}
 .bluetext {
   color:blue;
 }
@@ -93,10 +94,11 @@ footer{
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 100px;
     padding-right:100px;
-
+    border-top: #212529 2px solid;
+    margin-top: 50px;
 }
 
 .copyright{
@@ -114,5 +116,6 @@ footer{
     padding-top: 20px;
     padding-left: 30px;
     color: #fed136;
+    font-size: 20px;
 }
 /* footer css end*/

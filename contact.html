@@ -9,7 +9,90 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap');
-    </style>
+main{background-image:url(../images/map-image.png);
+background-color: #212529;
+padding-bottom: 100px;}
+h3{color:#f8f9fa ;}
+
+input[type=text], select {
+  width: 50%;
+  padding: 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: lightgrey;
+}
+
+input[type=email], select {
+  width: 50%;
+  padding: 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: lightgrey;
+}
+
+input[type=tel], select {
+  width: 50%;
+  padding: 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: lightgrey;
+}
+
+input[type=message], select {
+  width: 50%;
+    padding-bottom: 179px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    margin-top: -228px;
+
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: lightgrey;
+    margin-left: 52%;
+}
+
+input[type=submit] {
+  background-color: #fed136 ;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: none;
+  margin-top:50px;
+  margin-left: 40%;
+}
+
+div {margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+ footer{
+    margin-top:0px ;
+ }   
+</style>
 </head>
 
 <body>
@@ -27,24 +110,28 @@
         </ul>   
     </nav>
     </header>  
-
+<main>
 <section class="page">
     <h3>CONTACT US</h3>
     <p><em>Lorem ipsum dolor sit amet consectetur.</em></p>
 </section>
+<div>
 <form class="" action="" method="post">
-    <input type="text" name="Your Name" id="value">
-    <input type="email" name="Your Email" id="value">
-    <input type="tel" name="Your Phone" id="value">
-    <input type="text" name="Your Message" id="value">
-    <input type="submit" name="Send Message" value="">
-  </form>
-
+    <input type="text" name="Your Name" id="value" value="Your Name" class="name">
+    <input type="email" name="Your Email" id="value" value="Your Email">
+    <input type="tel" name="Your Phone" id="value" value="Your Phone">
+    <input type="message" name="Your Message" id="value" value="Your Message">
+    <input type="submit" name="Send Message" value="Send Message">
+</form>
+</div>
+</main>
 	
 <footer>
     <div class="copyright">Copyright © Your Website 2022</div>
     <div><img src="images/social-icons.png" alt="social icons"></div>
-    <div class="privacy">Privacy Policy Terms of Use</div>
+    <div class="privacy"><p>Privacy Policy</p>
+        <p>Terms of Use</p>
+   </div>
 </footer>
 
 

@@ -9,7 +9,30 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap');
-    </style>
+
+
+.person{
+width: 50%; 
+margin: 20px;
+}
+.team{
+display: flex;
+width: 100%;
+margin-left: 20%;
+margin-right: 20%;
+}
+    main div .headshot{
+        width: 80%;
+    border-radius: 100%;
+    border: solid lightgrey 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.paragraph{margin-top: 500px;}
+
+
+    
+</style>
 </head>
 
 <body>
@@ -33,37 +56,40 @@
     <p><em>Lorem ipsum dolor sit amet consectetur.</em></p>
 </section>
 
-<main>  
-    <div>
-        <img src="images/team/1.jpg" alt="Kay Garland">
-        <h4>Kay Garland</h4>
-        <p>Lead Designer</p>
-        <img src="images/social-icons.png" alt="social icons">
-    </div>
+<main>
 
-    <div>
-        <img src="images/team/2.jpg" alt="Larry Parker">
-        <h4>Larry Parker</h4>
-        <p>Lead Marketer</p>
-        <img src="images/social-icons.png" alt="social icons">
+    <div class="team">
+        <div class="person">
+            <img src="images/team/1.jpg" alt="Kay Garland" class="headshot">  
+            <h4>Kay Garland</h4>
+            <p>Lead Designer</p>
+            <img src="images/social-icons.png" alt="social icons" class="icons">
+        </div>
+        <div class="person">
+            <img src="images/team/2.jpg" alt="Larry Parker" class="headshot">
+            <h4>Larry Parker</h4>
+             <p>Lead Marketer</p>
+            <img src="images/social-icons.png" alt="social icons" class="icons">
+        </div>
+        <div class="person">
+             <img src="images/team/3.jpg" alt="Diana Petersen" class="headshot">
+             <h4> Diana Petersen </h4>
+             <p>Lead Developer</p>
+             <img src="images/social-icons.png" alt="social icons" class="icons">
+        </div>
+    <div class="paragraph">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, 
+        totam corporis ea, alias ut unde.</p>
     </div>
-
-    <div>
-        <img src="images/team/3.jpg" alt="Diana Petersen">
-        <h4> Diana Petersen </h4>
-        <p>Lead Developer</p>
-        <img src="images/social-icons.png" alt="social icons">
-    </div>
-  
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-    Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, 
-    totam corporis ea, alias ut unde.</p>
 </main>	
 
 <footer>
     <div class="copyright">Copyright © Your Website 2022</div>
     <div><img src="images/social-icons.png" alt="social icons"></div>
-    <div class="privacy">Privacy Policy Terms of Use</div>
+    <div class="privacy"><p>Privacy Policy</p>
+        <p>Terms of Use</p>
+   </div>
 </footer>
 
 </body>
