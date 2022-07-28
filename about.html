@@ -10,11 +10,87 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap');
     
-   main img{
-    border-radius: 100%;
-    border: solid lightgrey 5px;
-   } 
+  
    div,h4, div p{text-align: left;}
+
+   .container{
+    min-height: 1355px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+   
+   }
+   .timeline ul{
+    list-style: none;
+   }
+
+   .timeline ul li{
+    padding: 20px;
+    margin-bottom: 20px;
+   }
+
+   .content h4{
+    padding: 5px;
+   }
+
+   @media only screen and (min-width:768px){
+    .timeline::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: lightgrey;
+
+    }
+}
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-60px)
+        
+    }
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(60px)
+    }
+
+   .timeline img{
+    float:none;
+    width: 30%;
+    border-radius: 100%;
+    border: solid lightgrey 3px;
+    position:absolute;
+    top: 16px;
+    transform: translateX(370px);
+}
+
+.timeline img:nth-child(even){
+    transform: translateX(1000px);
+}
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #f8f9fa;
+    text-align: center;
+    background-color: #fed136;
+}
     </style>
 </head>
 
@@ -40,44 +116,59 @@
 </section>
 
 <main>
-    <div>
-        <img src="images/about/1.jpg" alt="beginnings">
-        <h4>2009-2011</h4>
-        <h4>Our Humble Beginnings</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
-            recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+    <div class="container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="content" >
+                        <img src="images/about/1.jpg" alt="beginnings">
+                    <h4>2009-2011</h4>
+                    <h4>Our Humble Beginnings</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
+                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content" >
+                        <img src="images/about/2.jpg" alt="agency">   
+                        <h4>March 2011</h4>
+                        <h4>Agency is Born</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
+                            recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <img src="images/about/3.jpg" alt="December">
+                        <h4>December 2012</h4>
+                        <h4>Transition to Full Service</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
+                        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <img src="images/about/4.jpg" alt="phase two"> 
+                        <h4>July 2014</h4>
+                        <h4>Phase Two Expansion</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                         Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
+                         recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">   
+                        <h5>Be Part Of Our Story!</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <h4>March 2011</h4>
-        <h4>Agency is Born</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
-            recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-        <img src="images/about/2.jpg" alt="agency">    
-    </div>        
-    <div>
-        <img src="images/about/3.jpg" alt="December">
-        <h4>December 2012</h4>
-        <h4>Transition to Full Service</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-        Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
-        recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-    </div>
-
-    <div>
-        <h4>July 2014</h4>
-        <h4>Phase Two Expansion</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, 
-            recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-        <img src="images/about/4.jpg" alt="phase two">
-    </div>
-
-    <div>   
-       <h5>Be Part Of Our Story!</h5>
-    </div>
-
+    
+  
 </main>
 <footer>
     <div class="copyright">Copyright © Your Website 2022</div>
