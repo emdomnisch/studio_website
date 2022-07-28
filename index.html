@@ -3,7 +3,65 @@
 <head>
 <meta charset="utf-8">
 <title>Studio Website</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap');
+   
+    h2{
+    color:#f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 50px;
+}
+
+.welcome {
+    font-family: 'Roboto Slab', serif;
+    color: #f8f9fa;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px; 
+    
+}
+
+.top {
+    background-image:url(../images/header-bg.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    padding: 75px;
+}
+
+button {
+    background-color:#fed136;
+    color:#f8f9fa;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    border-radius:5px;
+    padding:15px 20px;
+    display:block;
+    margin:auto auto; 
+}
+main {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+main img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+</style>
 </head>
 
 <body>
@@ -20,43 +78,45 @@
         </ul>   
     </nav>
 </header>
-<section>
-       <p><em> Welcome To Our Studio! </em></p>
+<section class="top">
+       <p class="welcome"><em> Welcome To Our Studio! </em></p>
         <h2>IT'S NICE TO MEET YOU</h2>
         <button type="button" name="button">TELL ME MORE</button>  
 </section>
+
+<section class="page"> 
+    <h3>SERVICES</h3>
+    <p><em> Lorem ipsum dolor sit amet consectetur.</em></p>
+</section> 
 <main>
-    <section> 
-        <h3>SERVICES</h3>
-        <p> Lorem ipsum dolor sit amet consectetur.</p>
-    </section>  
 
     <div>
         <img src="images/shop-icon.png" alt="e-commerce">
-        <h3>E-Commerce</h3>
+        <h4>E-Commerce</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
 
     <div>
-        <img src="images/shop-icon.png" alt="responsive design">
-        <h3>Responsive Design</h3>
+        <img src="images/responsive-icon.png" alt="responsive design">
+        <h4>Responsive Design</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
         Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
 
     <div>
        <img src="images/security-icon.png" alt="web security">
-       <h3> Web Security</h3>
+       <h4> Web Security</h4>
        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
 </main>   
-<footer>     
-        <p>Copyright © Your Website 2022</p>
-        <img src="images/social-icons.png" alt="social icons">
-        <p>Privacy Policy Terms of Use</p>
-
-</footer>    
+<footer>
+    <div class="copyright">Copyright © Your Website 2022</div>
+    <div><img src="images/social-icons.png" alt="social icons"></div>
+    <div class="privacy"><p>Privacy Policy</p>
+         <p>Terms of Use</p>
+    </div>
+</footer> 
 </body>
 </html>
