@@ -9,7 +9,21 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Roboto+Slab:wght@300;400&display=swap');
-    </style>
+
+.port {display: flex;
+        flex-wrap:wrap;
+ }
+
+div {
+    padding: 10px;
+}
+
+main{margin-left: auto;
+    margin-right: auto;
+}
+
+
+</style>
 </head>
 
 <body>
@@ -26,12 +40,13 @@
         </ul>   
     </nav>
 </header>  
-<sectio class="page"n> 
+<section class="page"> 
     <h3>PORTFOLIO</h3>
     <p><em>Lorem ipsum dolor sit amet consectetur</em></p>
 </section>
 
-<main >
+<main>
+    <section class="port">
     <div>
         <img src="images/portfolio/01-thumbnail.jpg" alt="threads">
         <h4>Threads</h4>
@@ -49,7 +64,8 @@
         <h4>Finish</h4>
         <p><em>Identity</em></p>
     </div>
-
+</section>
+<section class="port">
     <div>
         <img src="images/portfolio/04-thumbnail.jpg" alt="lines">
         <h4>Lines</h4>
@@ -67,12 +83,15 @@
         <h4>Window</h4>
         <p><em>Photography</em></p>
     </div>
+</section> 
 </main>
 
 <footer>
     <div class="copyright">Copyright © Your Website 2022</div>
     <div><img src="images/social-icons.png" alt="social icons"></div>
-    <div class="privacy">Privacy Policy Terms of Use</div>
+    <div class="privacy"><p>Privacy Policy</p>
+        <p>Terms of Use</p>
+   </div>
 </footer>
 
 </body>
